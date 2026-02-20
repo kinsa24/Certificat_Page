@@ -1,0 +1,1 @@
+Put your certificate images here (e.g., aws-cloud-foundations.jpg).
