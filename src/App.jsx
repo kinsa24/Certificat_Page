@@ -36,9 +36,12 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-slate-900">Certificates</h1>
+              <h1 className="text-2xl font-bold text-slate-900">
+                Certificates
+              </h1>
               <p className="mt-1 text-sm text-slate-600">
-                A simple page to showcase certifications with details and verification links.
+                A simple page to showcase certifications with details and
+                verification links.
               </p>
             </div>
 
@@ -58,8 +61,7 @@ export default function App() {
                       activeCat === cat
                         ? "bg-slate-900 text-white border-slate-900"
                         : "bg-white text-slate-700 hover:bg-slate-50"
-                    }`}
-                  >
+                    }`}>
                     {cat}
                   </button>
                 ))}
@@ -68,7 +70,10 @@ export default function App() {
           </div>
 
           <div className="mt-4 text-xs text-slate-500">
-            Showing <span className="font-semibold text-slate-700">{filtered.length}</span>{" "}
+            Showing{" "}
+            <span className="font-semibold text-slate-700">
+              {filtered.length}
+            </span>{" "}
             certificate(s)
           </div>
         </div>
@@ -80,8 +85,7 @@ export default function App() {
             <button
               key={c.id}
               onClick={() => setSelected(c)}
-              className="group overflow-hidden rounded-2xl border bg-white text-left shadow-sm transition hover:shadow-md"
-            >
+              className="group overflow-hidden rounded-2xl border bg-white text-left shadow-sm transition hover:shadow-md">
               <div className="aspect-[16/10] overflow-hidden bg-slate-100">
                 <img
                   src={c.image}
@@ -101,7 +105,9 @@ export default function App() {
                   </span>
                 </div>
 
-                <h3 className="mt-3 text-base font-bold text-slate-900">{c.title}</h3>
+                <h3 className="mt-3 text-base font-bold text-slate-900">
+                  {c.title}
+                </h3>
                 <p className="mt-1 text-sm text-slate-600">{c.issuer}</p>
 
                 <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-slate-700">
@@ -112,8 +118,7 @@ export default function App() {
                   {(c.skills || []).slice(0, 3).map((s) => (
                     <span
                       key={s}
-                      className="rounded-full border bg-white px-2.5 py-1 text-[11px] font-medium text-slate-700"
-                    >
+                      className="rounded-full border bg-white px-2.5 py-1 text-[11px] font-medium text-slate-700">
                       {s}
                     </span>
                   ))}
@@ -133,12 +138,27 @@ export default function App() {
         </div>
 
         <footer className="mt-10 border-t pt-6 text-sm text-slate-600">
-          <span className="font-semibold text-slate-900">Tip:</span> Put this page as a link inside your main portfolio,
-          so visitors can open your certificates without scrolling through everything else.
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              © {new Date().getFullYear()}{" "}
+              <span className="font-semibold text-slate-900">
+                Muhammad Muhajirin Chinsa
+              </span>
+              . All rights reserved.
+            </p>
+
+            <p className="text-slate-500">
+              Built with React + Vite. Hosted on Netlify.
+            </p>
+          </div>
         </footer>
       </main>
 
-      <CertificateModal open={!!selected} cert={selected} onClose={() => setSelected(null)} />
+      <CertificateModal
+        open={!!selected}
+        cert={selected}
+        onClose={() => setSelected(null)}
+      />
     </div>
   );
 }
