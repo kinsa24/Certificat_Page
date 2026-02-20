@@ -1,0 +1,67 @@
+export const certificates = [
+  {
+    id: "pi-diskominfo-makassar-2025",
+    title: "Praktik Industri (Internship) - Aplikasi & Informatika",
+    issuer: "Dinas Komunikasi dan Informatika Kota Makassar",
+    date: "2025-08-15",
+    category: "Other",
+    credentialId: "3193/Diskom/400.14.5.4/VIII/2025",
+    verifyUrl: "",
+    skills: ["Information Systems", "Web/IT Support", "Public Sector"],
+    description:
+      "Certificate of completion for Praktik Industri at the Application and Informatics division, Diskominfo Kota Makassar (16 June 2025 – 15 August 2025).",
+    image: "/certs/Serti_PI.jpg",
+  },
+  {
+    id: "sinau-webinar-20",
+    title: "Webinar #20 Sinau Koding (Participant)",
+    issuer: "Sinau Koding Academy",
+    date: "2025-08-07",
+    category: "Other",
+    credentialId: "00/WB/OL/20250807/30",
+    verifyUrl: "",
+    skills: ["Web Development", "Fullstack Overview", "Learning Roadmap"],
+    description:
+      "Certificate of participation for Webinar #20 Sinau Koding: “Bingung Mulai Belajar Coding dari mana?: Fullstack Developer Bisa Jadi Pintu Masuk Dunia Programming di 2025”.",
+    image: "/certs/sinau.png",
+  },
+  {
+    id: "indigo-ai-lifehack-2025",
+    title: "Indigo AI Connect: AI Lifehack (Certificate of Completion)",
+    issuer: "Indigo x LEAP (Telkom Digital)",
+    date: "2025-04-015",
+    category: "Other",
+    credentialId: "",
+    verifyUrl: "/certs/indigo-ai-lifehack.pdf",
+    skills: ["AI Productivity", "Workflow Optimization", "Prompting Basics"],
+    description:
+      "Certificate of completion for participating in Indigo AI Connect Event with the topic “AI LIFEHACK: SUPERCHARGE YOUR WORKFLOW”.",
+    image: "/certs/indigo1.png",
+  },
+  {
+    id: "indigo-ai-for-business",
+    title: "Indigo AI Connect Webinar: AI for Business",
+    issuer: "Indigo x LEAP (Telkom Digital)",
+    date: "2025-03-04",
+    category: "Other",
+    credentialId: "",
+    verifyUrl: "/certs/indigo-ai-for-business.pdf",
+    skills: ["AI for Business", "Automation", "Productivity"],
+    description:
+      "Certificate of completion for participating in Indigo AI Connect Webinar with the topic “AI FOR BUSINESS: INNOVATE, AUTOMATE, DOMINATE”.",
+    image: "/certs/indigo2.png",
+  },
+  {
+    id: "indigo-next-level-analytics",
+    title: "Indigo AI Connect Makassar Series: Next Level Analytics",
+    issuer: "Indigo (Telkom Indonesia)",
+    date: "2025-01-12",
+    category: "Data",
+    credentialId: "",
+    verifyUrl: "/certs/indigo-next-level-analytics.pdf",
+    skills: ["Analytics", "AI for Data Workflow", "Data Productivity"],
+    description:
+      "Certificate of appreciation for participating in Indigo AI Connect Makassar Series with the topic “Next Level Analytics: Optimizing AI into Everyday Data Workflow”.",
+    image: "/certs/indigo3.png",
+  },
+];
