@@ -142,7 +142,7 @@ export default function App() {
             <p>
               © {new Date().getFullYear()}{" "}
               <span className="font-semibold text-slate-900">
-                Muhammad Muhajirin Chinsa
+                Kinsa
               </span>
               . All rights reserved.
             </p>
