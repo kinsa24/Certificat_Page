@@ -142,7 +142,7 @@ export default function App() {
             <p>
               © {new Date().getFullYear()}{" "}
               <span className="font-semibold text-slate-900">
-                Kinsa
+                Chinsa
               </span>
               . All rights reserved.
             </p>
